@@ -52,7 +52,7 @@ public class Calculator {
         return inputToRPN;
     }
 
-    public static double calculateFromPRN(String userInput) {
+    public static double calculate(String userInput) {
         Validator validator = new Validator();
         validator.validateUserInput(userInput);
         List<InputElement> inputElementList = StringToElementParser.parseStringToElement(userInput);

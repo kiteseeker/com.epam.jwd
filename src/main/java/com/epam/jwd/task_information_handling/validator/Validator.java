@@ -25,6 +25,7 @@ public class Validator {
             }
         } catch (LetterInputException e) {
             logger.error("Incorrect input! Please Only numbers, operators and brackets are allowed!");
+            System.exit(1);
         }
     }
 
